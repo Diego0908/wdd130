@@ -1,0 +1,17 @@
+h1 {
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  color: #0e357c;
+  font-size:xx-large;
+}
+h3 {
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  color: #0e357c;
+  font-size: xx-large;
+}
+p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: xx-large;
+    padding: 100px;
+}
