@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Pacifico&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Lobster&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap');
+
+
 
 body {
     background-color: #fcfbfb;
@@ -230,4 +233,340 @@ nav {
         margin-top: 25px;
     }
 }
-  
+
+
+/* This is a new CSS page */
+.first-card{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+}
+.first-card h2{
+    grid-row: 1/2;
+    grid-column: 1/4;
+    padding-top: 60px;
+    text-align: left;
+    text-shadow: 2px 2px rgba(128, 128, 128, 0.281);
+    font-family: 'Playfair Display', 'Times New Roman', sans-serif;
+}
+.first-card .title2{
+    grid-row: 4;
+    grid-column: 1/8;
+    padding-top: 60px;
+    text-align: left;
+    text-shadow: 2px 2px rgba(128, 128, 128, 0.281);
+}
+.first-card .p1{
+    grid-row: 2;
+    grid-column: 1/9;
+    padding-top: 60px;
+    text-align: left;
+    font-size: 30px;
+    padding-bottom: 40px;
+    font-family: 'Istok Web', 'Times New Roman', sans-serif;
+}
+.first-card .p2{
+    grid-row: 5;
+    grid-column: 1/9;
+    padding-top: 60px;
+    text-align: left;
+    font-size: 30px;
+    padding-bottom: 40px;
+    font-family: 'Istok Web', 'Times New Roman', sans-serif;
+}
+.first-card img{
+    grid-row: 3;
+    grid-column: 1/9;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #000;
+}
+
+.second-card{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 100px 500px 100px; 
+}
+.second-card h2{
+    text-align: left;
+    text-shadow: 2px 2px rgba(128, 128, 128, 0.281);
+    font-family: 'Playfair Display', 'Times New Roman', sans-serif;
+}
+.second-card p{
+    grid-column: 1;
+    grid-row: 2;
+    font-size: 27px;
+    text-align: left;
+    font-family: 'Istok Web', 'Times New Roman', sans-serif;
+    
+}
+.second-card img{
+    width: 100%;
+    grid-column: 3;
+    grid-row: 1/2;
+    justify-content: space-evenly;
+    border: 2px solid #000;
+}
+.second-card button{
+    grid-column: 3;
+    grid-row: 3;
+    border-radius: 8px;
+    font-size: 30px;
+    font-family: 'Pacifico', 'Times New Roman', sans-serif;
+
+}
+.second-card button:hover{
+    background-color: rgba(21, 131, 182, 0.699);
+
+}
+
+.third-card{
+    display: grid;
+    grid-template-columns: 3fr  1fr 3fr;
+    grid-template-rows: 100px 500px 100px;
+}
+.third-card p{
+    grid-column: 3;
+    grid-row: 2;
+    font-size: 30px;
+    text-align: justify;
+    font-family: 'Istok Web', 'Times New Roman', sans-serif;
+    
+}
+.third-card img{
+    width: 100%;
+    grid-column: 1;
+    grid-row: 1/2;
+    justify-content: space-evenly;
+    border: 2px solid #000;
+}
+.third-card button{
+    grid-column: 1;
+    grid-row: 3;
+    border-radius: 8px;
+    font-size: 30px;
+    font-family: 'Pacifico', 'Times New Roman', sans-serif;
+
+}
+
+.third-card button:hover{
+    background-color: rgba(21, 131, 182, 0.699);
+
+}
+
+
+.fourd-card{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 100px 500px 100px; 
+}
+.fourd-card p{
+    grid-column: 1;
+    grid-row: 2;
+    font-size: 30px;
+    text-align: left;
+    font-family: 'Istok Web', 'Times New Roman', sans-serif;
+    
+}
+.fourd-card img{
+    width: 100%;
+    grid-column: 3;
+    grid-row: 2;
+    justify-content: space-evenly;
+    border: 2px solid #000;
+}
+.fourd-card button{
+    grid-column: 3;
+    grid-row: 3;
+    border-radius: 8px;
+    font-size: 30px;
+    font-family: 'Pacifico', 'Times New Roman', sans-serif;
+
+}
+.fourd-card button:hover{
+    background-color: rgba(21, 131, 182, 0.699);
+
+}
+
+/* Responsive design */
+
+@media screen and (max-width: 1286px) {
+    .first-card h2{
+        font-size: 25px;
+        grid-column: 1/7;
+    }
+    .first-card .p1{
+        font-size: 20px;
+    }
+    
+    .first-card .p2{
+        font-size: 20px;
+    }
+
+    .second-card{
+        display: grid;
+        grid-template-columns: 2fr 3fr 1fr 3fr;
+        grid-template-rows: 1fr 4fr 1fr 1fr;
+    }
+    .second-card h2{
+        font-size: 25px;
+        grid-column: 1/3;
+    }
+    .second-card p{
+        font-size: 20px;
+        grid-column: 1/3;
+    }
+    .second-card img{
+        width: 70%;
+        justify-content: space-evenly;
+        grid-column: 4/5;
+        grid-row: 2;
+    }
+    .second-card button{
+        width: 60%;
+        grid-column: 4/5;
+        grid-row: 4;
+        font-size: 20px;
+    }
+
+    .third-card{
+        display: grid;
+        grid-template-columns: 4fr 1fr 1fr 3fr;
+        grid-template-rows: 1fr 4fr 1fr 1fr;
+    }
+    .third-card h2{
+        font-size: 25px;
+    }
+    .third-card p{
+        font-size: 20px;
+        grid-column: 3/5;
+    }
+    .third-card img{
+        width: 70%;
+        justify-content: space-evenly;
+        grid-row: 2;
+    }
+    .third-card button{
+        width: 60%;
+        grid-row: 4;        
+        font-size: 20px;
+    }
+
+    .fourd-card{
+        display: grid;
+        grid-template-columns: 2fr 3fr 1fr 3fr;
+        grid-template-rows: 1fr 4fr 20px 1fr;
+    }
+    .fourd-card h2{
+        font-size: 25px;
+        grid-column: 1/3;
+    }
+    .fourd-card p{
+        font-size: 20px;
+        grid-column: 1/3;
+    }
+    .fourd-card img{
+        width: 90%;
+        justify-content: space-evenly;
+        grid-column: 4/5;
+        grid-row: 2;
+    }
+    .fourd-card button{
+        width: 60%;
+        grid-column: 4/5;
+        grid-row: 4;
+        font-size: 20px;
+    }
+
+}
+      
+@media screen and (max-width: 769px) {
+    .first-card h2{
+        font-size: 25px;
+        grid-column: 1/7;
+    }
+    .first-card .p1{
+        font-size: 15px;
+    }
+    
+    .first-card .p2{
+        font-size: 15px;
+    }
+
+    .second-card{
+        display: grid;
+        grid-template-columns: 2fr 3fr 1fr 3fr;
+        grid-template-rows: 1fr 4fr 20px 1fr;
+    }
+    .second-card h2{
+        font-size: 25px;
+        grid-column: 1/3;
+    }
+    .second-card p{
+        font-size: 15px;
+        grid-column: 1/3;
+    }
+    .second-card img{
+        width: 70%;
+        justify-content: space-evenly;
+        grid-column: 4/5;
+        grid-row: 2;
+    }
+    .second-card button{
+        width: 60%;
+        grid-column: 4/5;
+        grid-row: 4;
+        font-size: 20px;
+    }
+
+    .third-card{
+        display: grid;
+        grid-template-columns: 4fr 1fr 1fr 3fr;
+        grid-template-rows: 1fr 4fr 20px 1fr;
+    }
+    .third-card h2{
+        font-size: 25px;
+    }
+    .third-card p{
+        font-size: 15px;
+        grid-column: 3/5;
+    }
+    .third-card img{
+        width: 70%;
+        justify-content: space-evenly;
+        grid-row: 2;
+    }
+    .third-card button{
+        width: 60%;
+        grid-row: 4;        
+        font-size: 20px;
+    }
+
+    .fourd-card{
+        display: grid;
+        grid-template-columns: 2fr 3fr 1fr 3fr;
+        grid-template-rows: 1fr 4fr 20px 1fr;
+    }
+    .fourd-card h2{
+        font-size: 25px;
+        grid-column: 1/3;
+    }
+    .fourd-card p{
+        font-size: 15px;
+        grid-column: 1/3;
+    }
+    .fourd-card img{
+        width: 90%;
+        justify-content: space-evenly;
+        grid-column: 4/5;
+        grid-row: 2;
+    }
+    .fourd-card button{
+        width: 60%;
+        grid-column: 4/5;
+        grid-row: 4;
+        font-size: 20px;
+    }
+
+}
+     
