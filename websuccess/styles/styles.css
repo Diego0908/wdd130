@@ -259,3 +259,343 @@ nav {
         margin-top: 25px;
     }
 }
+
+/* This is the blog CSS page */
+
+.first-card{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.first-card h2{
+    grid-column: 1/7;
+    text-align: left;
+    padding-top: 50px;
+    font-family: 'Sometype Mono', 'Times New Roman', sans-serif;
+}
+.first-card p{
+    grid-column: 1/9;
+    text-align: left;
+    font-size: 25px;
+    font-family: 'Roboto Condensed', 'Times New Roman', sans-serif;
+}
+.first-card img{
+    width: 100%;
+    grid-column: 1/9;
+    border-radius: 20px;
+}
+
+.second-card{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr  1fr 4fr;
+    grid-template-rows: 100px 500px 100px 100px;
+    padding-top: 50px; 
+}
+.second-card h2{
+    grid-column: 1/4;
+    text-align: left;
+    font-family: 'Sometype Mono', 'Times New Roman', sans-serif;
+}
+.second-card p{
+    text-align: left;
+    grid-column: 1/4;
+    text-align: justify;
+    font-size: 25px;
+    font-family: 'Roboto Condensed', 'Times New Roman', sans-serif;
+}
+.second-card button{
+    grid-column: 2;
+    font-size: 25px;
+    font-family: 'Roboto Condensed', 'Times New Roman', sans-serif;
+    border-radius: 20px;
+    color: white; /* Add a text color */
+    padding: 14px 28px; /* Add some padding */
+    cursor: pointer; /* Add a pointer cursor on mouse-over */
+}
+.second-card button {background-color: #2196F3;} /* Blue */
+.second-card button:hover {background: #0b7dda;}
+
+.second-card img{
+    width: 100%;
+    grid-column: 5/6;
+    grid-row: 2/5;
+    border-radius: 20px;
+    border: 4px solid #0b7dda6b;
+}
+.second-card img:hover{
+    opacity: 0.7;
+}
+
+.third-card{
+    display: grid;
+    grid-template-columns: 3fr 1fr  1fr 1fr 2fr;
+    grid-template-rows: 100px 500px 100px 100px;
+    padding-top: 50px;
+}
+.third-card h2{
+    grid-column: 4/6;
+    text-align: left;
+    font-family: 'Sometype Mono', 'Times New Roman', sans-serif;
+}
+.third-card p{
+    grid-column: 4/6;
+    text-align: left;
+    font-size: 25px;
+    font-family: 'Roboto Condensed', 'Times New Roman', sans-serif;
+}
+.third-card img{
+    width: 100%;
+    grid-column: 1/3;
+    grid-row: 2/3;
+    border-radius: 20px;
+    border: 4px solid rgba(184, 33, 243, 0.582);
+}
+.third-card img:hover{
+    opacity: 0.7;
+}
+.third-card button{
+    grid-column: 4/6;
+    font-size: 25px;
+    font-family: 'Roboto Condensed', 'Times New Roman', sans-serif;
+    border-radius: 20px;
+    color: white; /* Add a text color */
+    padding: 14px 28px; /* Add some padding */
+    cursor: pointer; /* Add a pointer cursor on mouse-over */
+}
+.third-card button {background-color: rgba(184, 33, 243, 0.582);} 
+.third-card button:hover {background: #0b7dda;}
+
+.fourd-card{
+    display: grid;
+    grid-template-columns: 4fr 1fr 4fr;
+    grid-template-rows: 100px 500px 100px 100px;
+    padding-top: 50px; 
+}
+.fourd-card h2{
+    grid-column: 1/2;
+    text-align: left;
+    font-family: 'Sometype Mono', 'Times New Roman', sans-serif;
+}
+.fourd-card p{
+    grid-column: 1/2;
+    text-align: left;
+    font-size: 25px;
+    font-family: 'Roboto Condensed', 'Times New Roman', sans-serif;
+}
+.fourd-card img{
+    width: 100%;
+    grid-column: 3;
+    border-radius: 20px;
+    border: 4px solid #0b7dda6b;
+}
+.fourd-card img:hover{
+    opacity: 0.7;
+}
+.fourd-card button{
+    font-size: 25px;
+    font-family: 'Roboto Condensed', 'Times New Roman', sans-serif;
+    border-radius: 20px;
+    color: white; /* Add a text color */
+    padding: 14px 28px; /* Add some padding */
+    cursor: pointer; /* Add a pointer cursor on mouse-over */
+}
+.fourd-card button {background-color: #2196F3;} /* Blue */
+.fourd-card button:hover {background: #0b7dda;}
+@media screen and (max-width: 1286px) {
+    .first-card h2{
+        font-size: 25px;
+        grid-column: 1/7;
+    }
+    .first-card .p1{
+        font-size: 20px;
+    }
+    
+    .first-card .p2{
+        font-size: 20px;
+    }
+
+    .second-card{
+        display: grid;
+        grid-template-columns: 2fr 3fr 1fr 3fr;
+        grid-template-rows: 1fr 4fr 1fr 1fr;
+    }
+    .second-card h2{
+        font-size: 25px;
+        grid-column: 1/3;
+    }
+    .second-card p{
+        font-size: 20px;
+        grid-column: 1/3;
+    }
+    .second-card img{
+        width: 70%;
+        justify-content: space-evenly;
+        grid-column: 4/5;
+        grid-row: 2;
+    }
+    .second-card button{
+        width: 60%;
+        grid-column: 4/5;
+        grid-row: 4;
+        font-size: 20px;
+    }
+
+    .third-card{
+        display: grid;
+        grid-template-columns: 4fr 1fr 1fr 3fr;
+        grid-template-rows: 1fr 4fr 1fr 1fr;
+    }
+    .third-card h2{
+        font-size: 25px;
+    }
+    .third-card p{
+        font-size: 20px;
+        grid-column: 3/5;
+    }
+    .third-card img{
+        width: 70%;
+        justify-content: space-evenly;
+        grid-row: 2;
+    }
+    .third-card button{
+        width: 60%;
+        grid-row: 4;        
+        font-size: 20px;
+    }
+
+    .fourd-card{
+        display: grid;
+        grid-template-columns: 2fr 3fr 1fr 3fr;
+        grid-template-rows: 1fr 4fr 20px 1fr;
+    }
+    .fourd-card h2{
+        font-size: 25px;
+        grid-column: 1/3;
+    }
+    .fourd-card p{
+        font-size: 20px;
+        grid-column: 1/3;
+    }
+    .fourd-card img{
+        width: 90%;
+        justify-content: space-evenly;
+        grid-column: 4/5;
+        grid-row: 2;
+    }
+    .fourd-card button{
+        width: 60%;
+        grid-column: 4/5;
+        grid-row: 4;
+        font-size: 20px;
+    }
+
+}
+      
+@media screen and (max-width: 769px) {
+    .first-card h2{
+        font-size: 25px;
+        grid-column: 1/7;
+    }
+    .first-card .p1{
+        font-size: 15px;
+    }
+    
+    .first-card .p2{
+        font-size: 15px;
+    }
+
+    .second-card{
+        display: grid;
+        grid-template-columns: 2fr 3fr 1fr 3fr;
+        grid-template-rows: 1fr 4fr 20px 1fr;
+    }
+    .second-card h2{
+        font-size: 25px;
+        grid-column: 1/3;
+    }
+    .second-card p{
+        font-size: 15px;
+        grid-column: 1/3;
+    }
+    .second-card img{
+        width: 70%;
+        justify-content: space-evenly;
+        grid-column: 4/5;
+        grid-row: 2;
+    }
+    .second-card button{
+        width: 60%;
+        grid-column: 4/5;
+        grid-row: 4;
+        font-size: 20px;
+    }
+
+    .third-card{
+        display: grid;
+        grid-template-columns: 4fr 1fr 1fr 3fr;
+        grid-template-rows: 1fr 4fr 20px 1fr;
+    }
+    .third-card h2{
+        font-size: 25px;
+    }
+    .third-card p{
+        font-size: 15px;
+        grid-column: 3/5;
+    }
+    .third-card img{
+        width: 70%;
+        justify-content: space-evenly;
+        grid-row: 2;
+    }
+    .third-card button{
+        width: 60%;
+        grid-row: 4;        
+        font-size: 20px;
+    }
+
+    .fourd-card{
+        display: grid;
+        grid-template-columns: 2fr 3fr 1fr 3fr;
+        grid-template-rows: 1fr 4fr 20px 1fr;
+    }
+    .fourd-card h2{
+        font-size: 25px;
+        grid-column: 1/3;
+    }
+    .fourd-card p{
+        font-size: 15px;
+        grid-column: 1/3;
+    }
+    .fourd-card img{
+        width: 90%;
+        justify-content: space-evenly;
+        grid-column: 4/5;
+        grid-row: 2;
+    }
+    .fourd-card button{
+        width: 60%;
+        grid-column: 4/5;
+        grid-row: 4;
+        font-size: 20px;
+    }
+
+}
+.first-card img:hover{
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+    opacity: 0.7;
+}
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
